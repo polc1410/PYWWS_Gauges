@@ -1,11 +1,16 @@
-#raw
+#raw#
 #timezone utc#
 #roundtime False#
 {
+#hourly#
+#daily#
+"tempTL":"#temp_out_min "%.1f"#",
+"tempTH":"#temp_out_max "%.1f"#",
+#live#
+#raw#
 "date":"#idx "%H:%M"#",
+"timeUTC":"#idx "%Y,%m,%d,%H,%M,%S"#",
 "temp":"#temp_out "%.1f"#",
-"tempTL":"5.9",
-"tempTH":"17.7",
 "intemp":"#temp_in "%.1f"#",
 "dew":"#calc "dew_point(data['temp_out'], data['hum_out'])" "%.1f"#",
 "dewpointTL":"4.0",
@@ -64,7 +69,7 @@
 "TwgustTM":"11:57",
 "windTM":"6.6",
 "bearingTM":"45",
-"timeUTC":"2012,6,4,22,43,47",
+
 "BearingRangeFrom10":"000",
 "BearingRangeTo10":"000",
 "UV":"0.0",
