@@ -9,6 +9,8 @@
 #hourly#
 "wspeed":"#wind_ave "%.0f" "" "x * 3.6 / 1.609344"#",
 "avgbearing":"135",
+"BearingRangeFrom10":"000",
+"BearingRangeTo10":"000",
 "forecast":"#calc "Zambretti(params, data)"#",
 
 "LastRainTipISO":"2012-06-04 01:43",
@@ -50,6 +52,11 @@
 "ThumTH":"04:42",
 "hourlyrainTH":"0.1",
 "ThourlyrainTH":"01:44",
+"Tbeaufort":"#wind_ave "F%d" "" "wind_bft(x)"#",
+
+"TwgustTM":"11:57",
+"windTM":"6.6",
+"bearingTM":"45",
 
 #live#
 #raw#
@@ -76,21 +83,15 @@
 "windunit":"mph",
 "pressunit":"hPa",
 "rainunit":"mm",
-"Tbeaufort":"#wind_ave "F%d" "" "wind_bft(x)"#",
 
-"TwgustTM":"11:57",
-"windTM":"6.6",
-"bearingTM":"45",
 
-"BearingRangeFrom10":"000",
-"BearingRangeTo10":"000",
 "UV":"0.0",
 "SolarRad":"0",
 "CurrentSolarMax":"0",
 "WindRoseData":[1435.0,873.2,446.3,281.9,223.4,552.5,1145.6,1124.6],
-"version":"1.9.3",
+"version":"",
 "domwinddir":"NNE",
 "windrun":47.8,
-"build":"1035",
-"ver":"7"
+"build":"",
+"ver":""
 }
