@@ -1,6 +1,6 @@
 #raw
 #timezone utc#
-#roundtime false#
+#roundtime False#
 {
 "date":"#idx "%H:%M"#",
 "temp":"#temp_out "%.1f"#",
@@ -37,7 +37,7 @@
 "humTH":"94",
 "inhum":"#hum_in "%d"#",
 "SensorContactLost":"0",
-"forecast":"#calc "Zambretti(params, data)"#",
+"forecast":"Not forecasting yet",
 "tempunit":"C",
 "windunit":"mph",
 "pressunit":"hPa",
