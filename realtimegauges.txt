@@ -57,6 +57,8 @@
 "TwgustTM":"11:57",
 "windTM":"6.6",
 "bearingTM":"45",
+"domwinddir":"NNE",
+"windrun":47.8,
 
 #live#
 #raw#
@@ -66,8 +68,7 @@
 "intemp":"#temp_in "%.1f"#",
 "dew":"#calc "dew_point(data['temp_out'], data['hum_out'])" "%.1f"#",
 "apptemp":"#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f"#",
-
-"wchill":"6.3",
+"wchill":"#calc "13.12 + (0.6215 * data['temp_out']) - ( 11.37 * ((12 * data['wind_ave'])**0.16)) + ( 0.3965 * (data['temp_out'] * (12 * data['wind_ave'])**0.16))" "%.1f"#",
 "heatindex":"6.3",
 "humidex":"6.3",
 
@@ -84,14 +85,11 @@
 "pressunit":"hPa",
 "rainunit":"mm",
 
-
 "UV":"0.0",
 "SolarRad":"0",
 "CurrentSolarMax":"0",
 "WindRoseData":[1435.0,873.2,446.3,281.9,223.4,552.5,1145.6,1124.6],
 "version":"",
-"domwinddir":"NNE",
-"windrun":47.8,
 "build":"",
 "ver":""
 }
