@@ -12,11 +12,12 @@
 "forecast":"#calc "Zambretti(params, data)"#",
 
 "LastRainTipISO":"2012-06-04 01:43",
-"presstrendval":"+0.1",
+
 #hourly#
 #jump -3#
 #raw#
-"temptrend":"#calc "data['temp_out']-prevdata['temp_out']" "%+.1f"#",
+"temptrend":"#calc "(data['temp_out']-prevdata['temp_out'])/3" "%+.1f"#",
+"presstrendval":"#calc "(data['rel_pressure']-prevdata['rel_pressure'])/3" "%+.1f"#",
 
 #daily#
 "tempTL":"#temp_out_min "%.1f"#",
