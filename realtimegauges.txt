@@ -60,7 +60,7 @@
 "TpressTL":"00:13",
 "TpressTH":"22:22",
 "presstrendval":"+0.1",
-"Tbeaufort":"#wind_bft "F%f"#",
+"Tbeaufort":"#wind_ave "F%d" "" "wind_bft(x)"#",
 "TwgustTM":"11:57",
 "windTM":"6.6",
 "bearingTM":"45",
