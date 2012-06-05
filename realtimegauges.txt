@@ -68,7 +68,7 @@
 "intemp":"#temp_in "%.1f"#",
 "dew":"#calc "dew_point(data['temp_out'], data['hum_out'])" "%.1f"#",
 "apptemp":"#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f"#",
-"wchill":"#calc "13.12 + (0.6215 * data['temp_out']) - ( 11.37 * ((12 * data['wind_ave'])**0.16)) + ( 0.3965 * (data['temp_out'] * (12 * data['wind_ave'])**0.16))" "%.1f"#",
+"wchill":"#calc "13.12 + (0.6215 * data['temp_out']) - ( 11.37 * ((3.6 * data['wind_ave'])**0.16)) + ( 0.3965 * (data['temp_out'] * (3.6 * data['wind_ave'])**0.16))" "%.1f"#",
 "heatindex":"6.3",
 "humidex":"6.3",
 
