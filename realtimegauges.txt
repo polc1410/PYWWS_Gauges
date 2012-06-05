@@ -10,7 +10,7 @@
 "dew":"4.0",
 "dewpointTL":"4.0",
 "dewpointTH":"8.6",
-"apptemp":"4.9",
+"apptemp":"#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f"#",
 "apptempTL":"3.3",
 "apptempTH":"16.3",
 "wchill":"6.3",
