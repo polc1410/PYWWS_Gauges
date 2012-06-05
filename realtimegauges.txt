@@ -9,6 +9,7 @@
 #hourly#
 "wspeed":"#wind_ave "%.0f" "" "x * 3.6 / 1.609344"#",
 "avgbearing":"135",
+"forecast":"#calc "Zambretti(params, data)"#",
 
 #daily#
 "tempTL":"#temp_out_min "%.1f"#",
@@ -49,7 +50,7 @@
 "inhum":"#hum_in "%d"#",
 "SensorContactLost":"#calc "(idx - datetime.now()).seconds > 600" "%d" #",
 
-"forecast":"Not forecasting yet",
+
 "tempunit":"C",
 "windunit":"mph",
 "pressunit":"hPa",
