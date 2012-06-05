@@ -7,7 +7,7 @@
 "tempTL":"5.9",
 "tempTH":"17.7",
 "intemp":"#temp_in "%.1f"#",
-"dew":"4.0",
+"dew":"#calc "dew_point(data['temp_out'], data['hum_out'])" "%.1f"#",
 "dewpointTL":"4.0",
 "dewpointTH":"8.6",
 "apptemp":"#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f"#",
