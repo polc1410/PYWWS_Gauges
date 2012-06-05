@@ -2,7 +2,14 @@
 #timezone utc#
 #roundtime False#
 {
+#monthly#
+"pressL":"965.7",
+"pressH":"1045.3",
+
 #hourly#
+"wspeed":"#wind_ave "%.0f" "" "x * 3.6 / 1.609344"#",
+"avgbearing":"135",
+
 #daily#
 "tempTL":"#temp_out_min "%.1f"#",
 "tempTH":"#temp_out_max "%.1f"#",
@@ -12,6 +19,13 @@
 "heatindexTH":"17.7",
 "apptempTL":"3.3",
 "apptempTH":"16.3",
+"wgustTM":"13.4",
+"pressTL":"1012.1",
+"pressTH":"1018.0",
+"rfall":"#rain#",
+"rrateTM":"1.2",
+"humTL":"49",
+"humTH":"94",
 
 #live#
 #raw#
@@ -26,25 +40,15 @@
 "heatindex":"6.3",
 "humidex":"6.3",
 
-"wlatest":"0.0",
-"wspeed":"#wind_ave "%.0f" "" "x * 3.6 / 1.609344"#",
+"wlatest":"#wind_ave "%.0f" "" "x * 3.6 / 1.609344"#",
 "wgust":"#wind_gust "%.0f" "" "x * 3.6 / 1.609344"#",
-"wgustTM":"13.4",
-"bearing":"#wind_dir "%d" "" "x * 22.5"#",
-"avgbearing":"135",
+"bearing":"#wind_dir "%d" "0" "x * 22.5"#",
 "press":"#rel_pressure#",
-"pressTL":"1012.1",
-"pressTH":"1018.0",
-"pressL":"965.7",
-"pressH":"1045.3",
-"rfall":"#rain#",
-"rrate":"0.0",
-"rrateTM":"1.2",
+"rrate":"#rain#",
 "hum":"#hum_out "%d"#",
-"humTL":"49",
-"humTH":"94",
 "inhum":"#hum_in "%d"#",
-"SensorContactLost":"0",
+"SensorContactLost":"#calc "(idx - datetime.now()).seconds > 600" "%d" #",
+
 "forecast":"Not forecasting yet",
 "tempunit":"C",
 "windunit":"mph",
