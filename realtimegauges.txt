@@ -22,7 +22,11 @@
 "presstrendval":"#calc "(data['rel_pressure']-prevdata['rel_pressure'])/3" "%+.1f"#",
 
 #daily#
-"tempTL":"#temp_out_min "%.1f"#",
+#jump -1#
+#jump 1#
+"tempTL":"#calc "(data['temp_out_min'],prevdata['temp_out_min'])[data['temp_out_min'] is None]" "%.1f" "%.1f"#",
+
+
 "TtempTL":"01:47",
 "tempTH":"#temp_out_max "%.1f"#",
 "TtempTH":"17:18",
