@@ -42,10 +42,12 @@
 "apptempTH":"16.3",
 "TapptempTL":"00:19",
 "wgustTM":"13.4",
-"pressTL":"1012.1",
-"TpressTL":"00:13",
-"pressTH":"1018.0",
-"TpressTH":"22:22",
+
+"pressTL":"#calc "(data['rel_pressure_min'],prevdata['rel_pressure_min'])[data['rel_pressure_min'] is None]" "%.1f" "%.1f"#",
+"TpressTL":"#calc "(data['rel_pressure_min_t'],prevdata['rel_pressure_min_t'])[data['rel_pressure_min_t'] is None]" "%H:%M" "%H:%M"#",
+"pressTH":"#calc "(data['rel_pressure_max'],prevdata['rel_pressure_max'])[data['rel_pressure_max'] is None]" "%.1f" "%.1f"#",
+"TpressTH":"#calc "(data['rel_pressure_max_t'],prevdata['rel_pressure_max_t'])[data['rel_pressure_max_t'] is None]" "%H:%M" "%H:%M"#",
+
 "rfall":"#rain#",
 "rrateTM":"1.2",
 "TrrateTM":"01:44",
