@@ -25,11 +25,10 @@
 #jump -1#
 #jump 1#
 "tempTL":"#calc "(data['temp_out_min'],prevdata['temp_out_min'])[data['temp_out_min'] is None]" "%.1f" "%.1f"#",
+"TtempTL":"#calc "(data['temp_out_min_t'],prevdata['temp_out_min_t'])[data['temp_out_min_t'] is None]" "%H:%M" "%H:%M"#",
+"tempTH":"#calc "(data['temp_out_max'],prevdata['temp_out_max'])[data['temp_out_max'] is None]" "%.1f" "%.1f"#",
+"TtempTH":"#calc "(data['temp_out_max_t'],prevdata['temp_out_max_t'])[data['temp_out_max_t'] is None]" "%H:%M" "%H:%M"#",
 
-
-"TtempTL":"01:47",
-"tempTH":"#temp_out_max "%.1f"#",
-"TtempTH":"17:18",
 "dewpointTL":"4.0",
 "TdewpointTL":"23:37",
 "dewpointTH":"8.6",
